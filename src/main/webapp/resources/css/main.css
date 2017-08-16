@@ -1,0 +1,164 @@
+/* Preset CSS */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, main, nav, section {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+img {
+  border: 0;
+}
+
+/* Global */
+html {
+  font-family: sans-serif,Arial;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:  0 0 20px;
+  line-height: 1.5;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* Header */
+.navbar {
+  background: #09659A;
+  /*margin-bottom: 100px;*/
+}
+
+.navbar .container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.navbar li a {
+  display: block;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Section */
+section.searchForm {
+  /*background: url(../img/bg.png) no-repeat center;*/
+  /*width: 549px;*/
+  /*height: 282px;*/
+  background: #1F8ECD;
+  display: flex;
+  padding-top: 100px;
+  flex-flow: column;
+  align-items: center;
+}
+
+section img {
+  width: 430px;
+  margin-bottom: 30px;
+}
+
+section form {
+  width: 522px;
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section input {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 20px 70px 15px 30px;
+  background: #dbf0fc;
+  width: 100%;
+  border: none;
+  color: #555e5e;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+form button {
+  padding: 17px 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+/*   top: 72.2%; */
+}
+
+button i.fa {
+  font-size: 2rem;
+  color: dimgrey;
+}
+
+/* Search Error */
+section.searchErr {
+  background: none;
+  padding-top: 70px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+section.searchErr p {
+  color: #555E5E;
+  font-weight: bold;
+}
+
+section.searchReq {
+  background: none;
+  padding-top: 20px;
+  font: 14px;
+}
+
+section.searchReq div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+section.searchReq p {
+  color: #707878;
+}
+
+section.searchErr input {
+  background: none;
+  outline: solid;
+}
+
+hr {
+  width: 35%;
+  color: #DBDEDE;
+}
