@@ -1,5 +1,6 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <section class="searchForm searchErr">
-  <h1>This summoner is not register at OP.GG. Please check spelling.</h1>
+  <h1>This ${error} at OP.GG. Please check spelling.</h1>
   <p>Did you select the right server? Try searching for the summoner in another region</p>
 </section>
 <hr>
@@ -11,6 +12,11 @@
   </form>
 </section>
 <hr>
+<c:forEach var = "item" items="${champs}">
+	<c:forEach var="elem" items="${item}">
+		<p>Champ <c:out value="${elem.value}"></c:out></p>
+	</c:forEach>
+</c:forEach>
 <section class="searchForm searchReq">
   <div>
     <p>You can view a Summoner's ranked record for season 1 to 7.</p>

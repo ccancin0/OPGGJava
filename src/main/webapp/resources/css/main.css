@@ -56,7 +56,7 @@ a {
   /*margin-bottom: 100px;*/
 }
 
-.navbar .container {
+.container {
   padding: 0 20px;
   margin: 0 auto;
   max-width: 1000px;
@@ -71,7 +71,7 @@ a {
 
 .nav-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /* Section */
@@ -84,9 +84,10 @@ section.searchForm {
   padding-top: 100px;
   flex-flow: column;
   align-items: center;
+  height: 100vh;
 }
 
-section img {
+section.searchForm img {
   width: 430px;
   margin-bottom: 30px;
 }
@@ -130,6 +131,7 @@ section.searchErr {
   padding-top: 70px;
   font-size: 18px;
   margin-bottom: 30px;
+  height: auto;
 }
 
 section.searchErr p {
@@ -141,6 +143,7 @@ section.searchReq {
   background: none;
   padding-top: 20px;
   font: 14px;
+  height: auto;
 }
 
 section.searchReq div {
@@ -161,4 +164,54 @@ section.searchErr input {
 hr {
   width: 35%;
   color: #DBDEDE;
+}
+
+/* Summoner Stats */
+section.summonerStats {
+  display: flex;
+  /*flex-direction: row;
+  justify-content: center;
+  margin: 2% 30% 0 0;*/
+  margin-top: 50px;
+  justify-content: space-around;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.profileIcon {
+  position: relative;
+}
+
+.profileIcon img#centerImg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: -1;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.summonerInfo {
+  display: flex;
+}
+
+.summonerInfo .RankInfo {
+  display: flex;
+  align-items: center;
+}
+
+.RankInfo p span {
+  font-weight: bold;
+}
+
+.RankInfo p::first-letter {
+  text-transform: capitalize;
+}
+
+.RankInfo p.rankTier {
+  color: #1f8ecd;
 }
